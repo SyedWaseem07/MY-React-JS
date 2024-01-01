@@ -85,3 +85,32 @@ function Receiver({name, year = 2012}) {
     )
 }
 ```
+
+## Password Generator
+### useEffect(() => {}, [])
+- Here callback function will be executed if there is change in values of elements present in dependency list
+
+### useCallback(() => {}, [])
+- return a memoized version of callback which only changes if there is a change in input
+
+### useRef(initial value)
+- returns a mutable ref object which persist whole lifecycle of component
+- ref= ""
+- eg :- to link input feild and copy button
+- On clicking on copy btn ref_var.current.?select();
+
+### custom hook (currency convertor project)
+- useCurrencyInfo :- making api call and  returning the data corressponding to currency
+
+### useParams()
+- returns an object of dynamic key value pairs from current URL
+
+### Loader
+- Before clicking when we hover on Nav-Link data is fetched and cached to reduce fetching time
+
+
+## Context API
+- Step-1 :- React.createContext()
+- Step-2 :- ContextProvider
+- Step-3 :- get axcess to context using useContext hook
+- Step-4 :- Send and receive data between components
